@@ -47,12 +47,10 @@ router.delete("/:id", async (req, res) => {
     // verificar datos
 
     if (!todoId) {
-      return res
-        .status(400)
-        .json({
-          errorMessage:
-            "No se identifica el ID. Porfvaro contacte con un programador.",
-        });
+      return res.status(400).json({
+        errorMessage:
+          "No se identifica el ID. Porfvaro contacte con un programador.",
+      });
     }
 
     // recibiendo datos comparar con la  base de datos
@@ -76,19 +74,16 @@ router.delete("/:id", async (req, res) => {
 
 router.put("/:id", async (req, res) => {
   try {
-
     // recoger id del to-do
     const todoId = req.params.id;
 
     // verificar datos
 
     if (!todoId) {
-      return res
-        .status(400)
-        .json({
-          errorMessage:
-            "No se identifica el ID. Porfvaro contacte con un programador.",
-        });
+      return res.status(400).json({
+        errorMessage:
+          "No se identifica el ID. Porfvaro contacte con un programador.",
+      });
     }
 
     // recibiendo datos comparar con la  base de datos
@@ -117,7 +112,6 @@ router.put("/:id", async (req, res) => {
 
 router.put("/description/:id", async (req, res) => {
   try {
-
     // datos del body
 
     const { description } = req.body;
@@ -128,12 +122,10 @@ router.put("/description/:id", async (req, res) => {
     // verificar datos
 
     if (!todoId) {
-      return res
-        .status(400)
-        .json({
-          errorMessage:
-            "No se identifica el ID. Porfvaro contacte con un programador.",
-        });
+      return res.status(400).json({
+        errorMessage:
+          "No se identifica el ID. Porfvaro contacte con un programador.",
+      });
     }
 
     // recibiendo datos comparar con la  base de datos
