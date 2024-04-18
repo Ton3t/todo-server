@@ -35,3 +35,6 @@ Esto iniciará el servidor en `localhost` en el puerto especificado en tu config
 - Node.js
 - Express
 - Mongoose
+- dotenv
+- cors
+- nodemon
