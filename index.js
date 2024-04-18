@@ -1,6 +1,7 @@
 const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
+const cors = require("cors");
 
 dotenv.config();
 
@@ -9,6 +10,9 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
+app.use(cors({
+    origin: "http://localhost:5173",
+}));
 
 app.listen(process.env.PORT || 4000, () =>
   console.log("listening on port", parseInt(process.env.PORT) || 4000)
