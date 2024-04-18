@@ -2,8 +2,14 @@ const Todo = require("../models/todoModel");
 
 const router = require("express").Router();
 
-router.get("/", (req, res) => {
-  res.send("Router test");
+router.get("/", async (req, res) => {
+    const existingTodo = await Todo.find();
+    
+    if(!existingTodo) { // si no existe le devolvemos un error 400
+        return res.status(400).json({ errorMessage: "No se encontro el ID" });
+    }
+
+    res.json(existingTodo);
 });
 
 // añadir to-do
@@ -58,5 +64,7 @@ router.delete("/:id", async (req, res) => {
     res.status(500).send();
   }
 });
+
+
 
 module.exports = router;
