@@ -29,3 +29,9 @@ npm run dev
 ```
 
 Esto iniciará el servidor en `localhost` en el puerto especificado en tu configuración.
+
+## Tecnologías usadas
+
+- Node.js
+- Express
+- Mongoose
