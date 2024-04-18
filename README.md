@@ -19,7 +19,7 @@ npm install
 
 ## Configuración modulo dotenv
 
-Para ello crear un archivo .env con las configuraciones de ejemplo en el archivo .env.example
+Para ello crear un archivo `.env` con las configuraciones de ejemplo en el archivo `.env.example`
 
 ## Ejecución en Desarrollo
 
