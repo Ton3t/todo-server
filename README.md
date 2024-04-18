@@ -16,6 +16,11 @@ Para instalar las dependencias del proyecto, ejecuta el siguiente comando:
  ```bash
 npm install
 ```
+
+## Configuración modulo dotenv
+
+Para ello crear un archivo .env con las configuraciones de ejemplo en el archivo .env.example
+
 ## Ejecución en Desarrollo
 
 Para ejecutar el servidor en modo de desarrollo, usa:
