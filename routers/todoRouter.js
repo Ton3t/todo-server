@@ -1,3 +1,5 @@
+const Todo = require("../models/todoModel");
+
 const router = require("express").Router();
 
 router.get("/", (req, res) => {
@@ -6,6 +8,11 @@ router.get("/", (req, res) => {
 
 router.post("/", async (req, res) => {
   const { description } = req.body;
+  const newTodo = new Todo({
+    description,
+  });
+
+  newTodo.save();
 });
 
 module.exports = router;
