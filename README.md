@@ -6,7 +6,7 @@ Este es el repositorio del servidor para una aplicación de gestión de tareas. 
 
 Para clonar el repositorio, utiliza el siguiente comando:
  ```bash
-git clone https://github.com/tu-usuario/todo-server.git
+git clone https://github.com/Ton3t/todo-server.git
 cd todo-server
 ```
 
