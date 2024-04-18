@@ -110,6 +110,7 @@ router.put("/:id", async (req, res) => {
   }
 });
 
+// actualizar la descripcion
 router.put("/description/:id", async (req, res) => {
   try {
     // datos del body
