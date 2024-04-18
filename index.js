@@ -8,6 +8,10 @@ dotenv.config();
 
 const app = express();
 
-const puerto = process.env.PORT;
+app.use(express.json());
 
-app.listen(process.env.PORT || 4000, () => console.log('listening on port', process.env.PORT || 4000));
+app.listen(process.env.PORT || 4000, () => console.log('listening on port', parseInt(process.env.PORT) || 4000));
+
+// routers
+
+app.use("/todo", require("./routers/todoRouter"));
